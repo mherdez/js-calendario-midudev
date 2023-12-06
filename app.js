@@ -27,7 +27,7 @@ root.innerHTML = calendar.map( mes => {
     <div class="mes">
       <h2>${mes.nombreMes} ${anioActual}</h2>
       <div class="dias">
-        ${nombreDias.map( dia => `<div class="dia">${dia}</div>`).join('')}
+        ${nombreDias.map( dia => `<div class="dia nombre-dia">${dia}</div>`).join('')}
         ${[...Array(mes.diaInicio).keys()].map( () => `<div class="dia"></div>`).join('')}
         ${[...Array(mes.diasMes).keys()].map( dia => `<div class="dia">${dia + 1}</div>`).join('')}
       </div>
